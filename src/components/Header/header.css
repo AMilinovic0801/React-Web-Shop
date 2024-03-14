@@ -1,0 +1,190 @@
+.nav-container{
+    width: 100%;
+}
+.header_container{
+    width: 100%;
+}
+#hamburger{
+    display: none;
+}
+.logo_jpn{
+    height: 100px;
+    width: 100px;
+}
+.shop_cart, .key_jpn{
+    height: 50px;
+    width: 50px;
+}
+a{
+    text-decoration: none;
+    color: white !important;
+}
+ul{
+    list-style-type: none;
+}
+.upper_header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0.1% 0;
+    height: 50px;
+}
+.upper_header ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.upper_header ul li{
+    padding-left: 2%;
+}
+.upper_header ul li:first-child{
+    margin-right: 15%;
+    font-size: 1.4rem;
+}
+.upper_header ul li:nth-child(6){
+    margin-left: 15%;
+}
+.upper_header ul li:nth-child(6)::before{
+    content: url(/src/Img/other/compass.svg);
+}
+.upper_header ul li:nth-child(2)::before{
+    content: url(/src/Img/other/watch.svg);
+}
+.lower_header{
+    background-image: url(/src/Img/other/lower_header.jpg);
+    background-position: 50% 53%;
+    height: 150px;
+}
+.lower_header ul{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 1%;
+}
+.lower_header ul li{
+    padding-left: 2%;
+}
+.lower_header ul li:first-child{
+    margin-left: 4%;
+}
+.lower_header ul li:last-of-type{
+    margin-right: 10%;
+    margin-top: 1.5%;
+}
+.lower_header ul li:nth-child(2), .lower_header ul li:nth-child(3), .lower_header ul li:nth-child(4), .lower_header ul li:nth-child(5), .lower_header ul li:nth-child(6), .lower_header ul li:nth-child(7){
+    margin-top: 2.2%;
+}
+
+.underline-animation {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        transition: width 0.3s ease-in-out;
+        }
+
+    &:hover {
+        color: blue;
+        &::before {
+          width: 100%;
+        }
+      }
+}
+.upper_color_change{
+    color: white;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: blue;
+    }
+}
+@media screen and (max-width: 1215px){
+    .upper_header{
+        display: none;
+    }
+    .lower_header figcaption{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .upper_header{
+        display: none;
+    }
+    .lower_header{
+        height: 100px;
+    }
+    .logo_jpn{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .upper_header{
+        display: none;
+    }
+
+    .lower_header{
+        display: none;
+        padding: 0;
+    }
+    .lower_header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lower_header li:last-child{
+        margin-left: 10%;
+    }
+    .lower_header li:nth-child(8){
+        display: none;
+    }
+    #hamburger {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        display: block;
+      }
+  
+      
+      #nav-menu {
+        display: none; 
+        padding: 0;
+        background-color: #f1f1f1;
+
+        left: 0; /* Position it at the left edge of the viewport */
+        width: 100%; /* Occupy the full width of the viewport */
+        height: fit-content;
+        z-index: 1000;
+      }
+  
+      #nav-menu ul {
+        list-style-type: none;
+        padding: 0;
+      }
+  
+      #nav-menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+      .shop_cart{
+        margin: 0 50%;
+        height: 50px;
+        width: 50px;
+      }
+
+}

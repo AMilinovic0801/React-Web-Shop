@@ -1,0 +1,95 @@
+.single-container{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://res.cloudinary.com/dygasiqvo/image/upload/v1710268577/background_left_plbjfe.jpg);
+    background-attachment: fixed;
+    height: 100%;
+}
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    background-image: url(https://res.cloudinary.com/dygasiqvo/image/upload/v1710268580/blog_banner_kudvkh.jpg);
+    background-position: bottom;
+    color: white;
+    height: 70vh;
+}
+.single-picture{
+    height: 80%;
+}
+.single-imgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3%;
+}
+.parts_button:hover{
+    color: mediumblue !important;
+    border-color: white !important;
+}
+.content_container{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    font-size: 2rem;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    width: 100%;
+}
+.faq_left{
+    width: 30%;
+    margin: 5%;
+    font-size: larger;
+}
+.faq_right{
+    width: 30%;
+    margin: 5%;
+    font-size: larger;
+}
+h2{
+    font-size: 4rem;
+}
+.before{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+#part_list{
+    justify-content: center;
+    align-self: center;
+}
+.single-button{
+    padding: 50px;
+    margin-bottom: 3%;
+}
+.bi{
+    font-size: 2rem;
+}
+@media screen and (max-width: 1000px) {
+    .content_container {
+        flex-direction: column;
+    }
+
+    .faq_left, .faq_right {
+        width: 80%;
+    }
+    .first_img{
+        align-self: center;
+    }
+    .last_img{
+        align-self: center;
+    }
+    .single-picture{
+        height: 300px;
+        width: 350px;
+    }
+}
