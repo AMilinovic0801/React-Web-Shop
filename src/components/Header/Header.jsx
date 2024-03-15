@@ -41,10 +41,10 @@ function Header(){
                                 <Link to='/home'  className="underline-animation">Home</Link>
                             </li>
                             <li>
-                                <Link to='/parts'  className="underline-animation">Inventory</Link>
+                                <Link to='/cars'  className="underline-animation">Inventory</Link>
                             </li>
                             <li>
-                                <Link to='/cars'  className="underline-animation">Parts & Accessories</Link>
+                                <Link to='/parts'  className="underline-animation">Parts & Accessories</Link>
                             </li>
                             <li>
                                 <a href="/web-shop/about_us.html" className="underline-animation" target="_parent">About Us</a>

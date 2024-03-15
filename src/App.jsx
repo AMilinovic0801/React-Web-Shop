@@ -7,6 +7,8 @@ import { carList } from './Database/carsList'
 import { partsList } from './Database/partsList'
 import { SinglePart } from './components/SinglePart/SinglePart'
 import { partsData } from './Database/parts'
+import { SingleCar } from './components/SingleCar/SingleCar'
+import { carData } from './Database/cars'
 
 
 function App() {
@@ -19,7 +21,10 @@ function App() {
             <Route index='/home' element={<HomePage/>}>
             </Route>
             <Route path='/home' element={<HomePage/>}></Route>
-            <Route path='/cars' element={<PageInventory {...carList}/>} />
+            <Route path='/cars' element={<Outlet/>}>
+              <Route index element={<PageInventory {...carList}/>}></Route>
+              <Route path='/cars/:id' element={<SingleCar {...carData}/>}/>
+            </Route>
             <Route path='/parts' element={<Outlet/>}>
               <Route index element={<PageInventory {...partsList}/>}></Route>
               <Route path='/parts/:id' element={<SinglePart {...partsData}{...partsList}/>}></Route>

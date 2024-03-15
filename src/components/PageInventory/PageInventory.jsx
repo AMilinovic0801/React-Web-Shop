@@ -3,9 +3,18 @@ import '../PageInventory/car_inventory.css'
 import '../AppWraper/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
+import WOW from 'wow.js'
+import 'wow.js/css/libs/animate.css';
+import { useEffect } from 'react';
+import 'mutationobserver-shim';
 
 function PageInventory({title, description, inventoryName, inventoryPictures, price, button}){
-
+    useEffect(() => {
+        const wow = new WOW({
+            live: true
+        });
+        wow.init();
+    }, []);
     console.log(title);
 
     return (

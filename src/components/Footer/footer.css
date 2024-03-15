@@ -55,7 +55,7 @@ dd{
 dt:nth-child(odd) {
     clear: both;
 }
-li{
+.footer-li{
     margin-bottom: 10%;
 }
 .bi-facebook{

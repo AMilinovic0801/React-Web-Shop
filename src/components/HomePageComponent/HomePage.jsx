@@ -2,8 +2,18 @@ import '../HomePageComponent/home_page.css'
 import '../AppWraper/style.css'
 import { PageInventory } from '../PageInventory/PageInventory';
 import { Link } from 'react-router-dom';
-
+import WOW from 'wow.js'
+import 'wow.js/css/libs/animate.css';
+import { useEffect } from 'react';
+import 'mutationobserver-shim';
 function HomePage(){
+
+    useEffect(() => {
+        const wow = new WOW({
+            live: false
+        });
+        wow.init();
+    }, []);
 
     return(
 

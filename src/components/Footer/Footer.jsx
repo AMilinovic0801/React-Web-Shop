@@ -8,13 +8,13 @@ function Footer(){
             <div className="left_footer">
                 <h2 className="footer_h2">Contact</h2>
                 <ul className="list_class">
-                    <li>
+                    <li className='footer-li'>
                         Ulica Bana Berislavica, Split 2100, Croatia
                     </li>
-                    <li>
+                    <li className='footer-li'>
                         <a href="tel:+38595555444" className="upper_color_change">+38595555444</a>
                     </li>
-                    <li>
+                    <li className='footer-li'>
                         <a href="/web-shop/about_us.html" target="_parent"><button>Map & Hours</button></a>
                     </li>
                 </ul>
@@ -22,19 +22,19 @@ function Footer(){
             <div className="mid_footer1">
                 <h2 className="footer_h2">Quick Access</h2>
                 <ul className="list_class">
-                    <li>
+                    <li className='footer-li'>
                         <a href="/web-shop/index.html" className="underline-animation" target="_parent">Home</a>
                     </li>
-                    <li>
+                    <li className='footer-li'>
                         <a href="/web-shop/car_inventory.html" className="underline-animation" target="_parent">Inventory</a>
                     </li>
-                    <li>
+                    <li className='footer-li'>
                         <a href="/web-shop/testemonial.html" className="underline-animation" target="_parent">Testemonials</a>
                     </li>
-                    <li>
+                    <li className='footer-li'>
                         <a href="/web-shop/about_us.html" className="underline-animation" target="_parent">About Us</a>
                     </li>
-                    <li>
+                    <li className='footer-li'>
                         <a href="/web-shop/contact_us.html" className="underline-animation" target="_parent">Contact Us</a>
                     </li>
                 </ul>

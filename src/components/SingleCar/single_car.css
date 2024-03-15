@@ -1,0 +1,44 @@
+.explaine{
+    text-align: center;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1%;
+}
+.singleCar-body{
+    background-image: url(https://res.cloudinary.com/dygasiqvo/image/upload/v1710268577/background_for_car_page_cwu1ma.jpg);
+    background-attachment: fixed;
+}
+li.list-details{
+    margin: 2% !important;
+}
+.back-arrow{
+    color: white;
+    transition-property: color;
+    transition-duration: 0.4s;
+    transform-style: ease-in-out;
+}
+.back-arrow:hover{
+    color: blue;
+}
+.carForm-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    border-radius: 25px;
+}
+
+.cGZKtg{
+    background-color: black !important;
+    transition-property: background-color !important;
+    transition-duration: 0.4s !important;
+    transform-style: ease-in-out !important;
+    margin-bottom: 2% !important;
+}
+
+.cGZKtg:hover{
+    background-color: white !important;
+    color: blue !important;
+    box-shadow: 0 4px 8px rgba(41, 62, 248, 1) !important;
+}

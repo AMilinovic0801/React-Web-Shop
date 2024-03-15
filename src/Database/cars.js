@@ -14,12 +14,12 @@ const carData = {
               "Transmission": "M/T"
             },
             "images": [
-              "../images/products/skyline-hakosuka-sale.jpg",
-              "../images/products/skyline-hakosuka-sale (1).jpg",
-              "../images/products/skyline-hakosuka-sale (2).jpg",
-              "../images/products/skyline-hakosuka-sale (3).jpg",
-              "../images/products/skyline-hakosuka-sale (4).jpg",
-              "../images/products/skyline-hakosuka-sale (5).jpg"
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324500/products/skyline-hakosuka-sale_frlh75.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324498/products/skyline-hakosuka-sale_4_m7zpnh.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324501/products/skyline-hakosuka-sale_5_py1llw.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324497/products/skyline-hakosuka-sale_3_bv82lh.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324495/products/skyline-hakosuka-sale_2_niiepo.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324493/products/skyline-hakosuka-sale_1_clyu8q.jpg"
             ]
           },
 
@@ -37,12 +37,12 @@ const carData = {
               "Transmission": "M/T5"
             },
             "images": [
-              "../images/products/nissan-skyline-sale.jpg",
-              "../images/products/nissan-skyline-sale 1.jpg",
-              "../images/products/nissan-skyline-sale 2.jpg",
-              "../images/products/nissan-skyline-sale 3.jpg",
-              "../images/products/nissan-skyline-sale 4.jpg",
-              "../images/products/nissan-skyline-sale 5.jpg"
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324492/products/nissan-skyline-sale_m5af3w.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324488/products/nissan-skyline-sale_3_wxvoqr.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324486/products/nissan-skyline-sale_2_zw9ukb.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324485/products/nissan-skyline-sale_1_xnmksg.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324491/products/nissan-skyline-sale_5_b92h9q.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324489/products/nissan-skyline-sale_4_mydvab.jpg"
             ]
           },
 
@@ -60,12 +60,12 @@ const carData = {
               "Transmission": "M/T5"
             },
             "images": [
-              "../images/products/hakosuka-gtr-sale.jpg",
-              "../images/products/hakosuka-gtr-sale 1.jpg",
-              "../images/products/hakosuka-gtr-sale 2.jpg",
-              "../images/products/hakosuka-gtr-sale 3.jpg",
-              "../images/products/hakosuka-gtr-sale 4.jpg",
-              "../images/products/hakosuka-gtr-sale 5.jpg"
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324204/products/hakosuka-gtr-sale_b6acu6.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324200/products/hakosuka-gtr-sale_3_uw6nxl.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324198/products/hakosuka-gtr-sale_2_k7m5js.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324039/products/hakosuka-gtr-sale_1_ge1oqk.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324039/products/hakosuka-gtr-sale_1_ge1oqk.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324202/products/hakosuka-gtr-sale_5_fprohb.jpg"
             ]
           },
 
@@ -83,12 +83,12 @@ const carData = {
               "Transmission": "M/T"
             },
             "images": [
-              "../images/products/bmw_e30_m3.jpg",
-              "../images/products/bmw_e30_m3 1.jpg",
-              "../images/products/bmw_e30_m3 2.jpg",
-              "../images/products/bmw_e30_m3 3.jpg",
-              "../images/products/bmw_e30_m3 4.jpg",
-              "../images/products/bmw_e30_m3 5.jpg"
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323827/products/bmw_e30_m3_epfhbg.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323749/products/bmw_e30_m3_3_cyezqz.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323748/products/bmw_e30_m3_2_halzle.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323747/products/bmw_e30_m3_1_l5kbos.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323769/products/bmw_e30_m3_5_hcunl0.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323751/products/bmw_e30_m3_4_amd7rx.jpg"
             ]
           },
 
@@ -106,12 +106,12 @@ const carData = {
               "Transmission": "M/T"
             },
             "images": [
-              "../images/products/delta_intgrale.jpg",
-              "../images/products/delta_intgrale 1.jpg",
-              "../images/products/delta_intgrale 2.jpg",
-              "../images/products/delta_intgrale 3.jpg",
-              "../images/products/delta_intgrale 4.jpg",
-              "../images/products/delta_intgrale 5.jpg"
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324025/products/delta_intgrale_hfxpxp.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324021/products/delta_intgrale_3_itxs1u.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324011/products/delta_intgrale_2_xrifee.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324010/products/delta_intgrale_1_thiutl.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324022/products/delta_intgrale_4_nebypc.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324024/products/delta_intgrale_5_j7qrt3.jpg"
             ]
           },
 
@@ -129,12 +129,12 @@ const carData = {
               "Transmission": "A/T"
             },
             "images": [
-              "../images/products/bmw_8.jpg",
-              "../images/products/bmw_8 1.jpg",
-              "../images/products/bmw_8 2.jpg",
-              "../images/products/bmw_8 3.jpg",
-              "../images/products/bmw_8 4.jpg",
-              "../images/products/bmw_8 5.jpg"
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323745/products/bmw_8_wznyke.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323741/products/bmw_8_3_mwktrz.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323740/products/bmw_8_2_zq7quw.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323739/products/bmw_8_1_jlih1d.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323743/products/bmw_8_4_lf4er7.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323744/products/bmw_8_5_jks6d3.jpg"
             ]
           },
 
@@ -152,12 +152,12 @@ const carData = {
               "Transmission": "A/T"
             },
             "images": [
-              "../images/products/mercedes_sl.jpg",
-              "../images/products/mercedes_sl 1.jpg",
-              "../images/products/mercedes_sl 2.jpg",
-              "../images/products/mercedes_sl 3.jpg",
-              "../images/products/mercedes_sl 4.jpg",
-              "../images/products/mercedes_sl 5.jpg"
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324474/products/mercedes_sl_1_wm0ikc.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324472/products/mercedes_sl_pfbzn3.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324208/products/mercedes_sl_3_eijf90.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324206/products/mercedes_sl_2_vpif5t.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324471/products/mercedes_sl_5_sqnpni.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324248/products/mercedes_sl_4_z3rjo5.jpg"
             ]
           },
 
@@ -175,12 +175,12 @@ const carData = {
               "Transmission": "M/T"
             },
             "images": [
-              "../images/products/bmw_m5.jpg",
-              "../images/products/bmw_m5 1.jpg",
-              "../images/products/bmw_m5 2.jpg",
-              "../images/products/bmw_m5 3.jpg",
-              "../images/products/bmw_m5 4.jpg",
-              "../images/products/bmw_m5 5.jpg"
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323828/products/bmw_m5_1_wl1vml.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324009/products/bmw_m5_wkgfqs.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710323829/products/bmw_m5_2_trwl0l.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324004/products/bmw_m5_3_q0xtns.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324006/products/bmw_m5_4_nfqkpm.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324007/products/bmw_m5_5_sdd5mz.jpg"
             ]
           },
 
@@ -198,12 +198,12 @@ const carData = {
               "Transmission": "A/T"
             },
             "images": [
-              "../images/products/mercedes_s_class.jpg",
-              "../images/products/mercedes_s_class 1.jpg",
-              "../images/products/mercedes_s_class 2.jpg",
-              "../images/products/mercedes_s_class 3.jpg",
-              "../images/products/mercedes_s_class 4.jpg",
-              "../images/products/mercedes_s_class 5.jpg"
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324483/products/mercedes_s_class_hqvld4.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324477/products/mercedes_s_class_2_xm772s.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324478/products/mercedes_s_class_3_cfp6g4.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324476/products/mercedes_s_class_1_vat5tk.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324480/products/mercedes_s_class_4_itsvpj.jpg",
+              "https://res.cloudinary.com/dygasiqvo/image/upload/v1710324482/products/mercedes_s_class_5_mxqk79.jpg"
             ]
           }
           
