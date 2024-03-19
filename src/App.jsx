@@ -9,28 +9,39 @@ import { SinglePart } from './components/SinglePart/SinglePart'
 import { partsData } from './Database/parts'
 import { SingleCar } from './components/SingleCar/SingleCar'
 import { carData } from './Database/cars'
+import { useState } from 'react'
+import { AppContext } from './AppContext/AppContext'
 
 
 function App() {
 
+  const [singleCarData, setSingleCarData] = useState(carData);
+  const [carShop, setCarShop] = useState(carList);
+  const [singlePartData, setSinglePartData] = useState(partsData);
+  const [partShop, setPartShop] = useState(partsList);
+
+  const dataStream = {singleCarData, setSingleCarData, carShop, setCarShop, singlePartData, setSinglePartData, partShop, setPartShop};
+
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<AppWrapperComponent/>}>
-            <Route index='/home' element={<HomePage/>}>
+        <AppContext.Provider value={dataStream}>
+          <Routes>
+            <Route path='/' element={<AppWrapperComponent/>}>
+              <Route index='/home' element={<HomePage/>}>
+              </Route>
+              <Route path='/home' element={<HomePage/>}></Route>
+              <Route path='/cars' element={<Outlet/>}>
+                <Route index element={<PageInventory/>}></Route>
+                <Route path='/cars/:id' element={<SingleCar/>}/>
+              </Route>
+              <Route path='/parts' element={<Outlet/>}>
+                <Route index element={<PageInventory/>}></Route>
+                <Route path='/parts/:id' element={<SinglePart/>}></Route>
+              </Route>
             </Route>
-            <Route path='/home' element={<HomePage/>}></Route>
-            <Route path='/cars' element={<Outlet/>}>
-              <Route index element={<PageInventory {...carList}/>}></Route>
-              <Route path='/cars/:id' element={<SingleCar {...carData}/>}/>
-            </Route>
-            <Route path='/parts' element={<Outlet/>}>
-              <Route index element={<PageInventory {...partsList}/>}></Route>
-              <Route path='/parts/:id' element={<SinglePart {...partsData}{...partsList}/>}></Route>
-            </Route>
-          </Route>
-        </Routes>
+          </Routes>
+        </AppContext.Provider>
       </BrowserRouter>
     </>
   )

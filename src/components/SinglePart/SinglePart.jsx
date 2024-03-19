@@ -3,10 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../SinglePart/single_part.css'
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AppContext } from '../../AppContext/AppContext';
 
-function SinglePart({items, inventoryPictures}){
-    console.log(items);
-    console.log(inventoryPictures);
+function SinglePart(){
+
+    const { partShop } = useContext(AppContext);
+    const { singlePartData } = useContext(AppContext);
+    const items = singlePartData.items
 
     const  urlParams =  useParams();
     const URLPartID = urlParams.id;
@@ -17,7 +21,7 @@ function SinglePart({items, inventoryPictures}){
                 <Link to='/parts' className='parts_button'>🢀</Link>
                 <h2>{items[URLPartID].name}</h2>
         </div>
-        <div className="col-lg-6 wow fadeInUp infinite mb-5 single-imgContainer"><img src={inventoryPictures[URLPartID]} className='single-picture' alt={items[URLPartID].name}/></div><div className="content_container">
+        <div className="col-lg-6 wow fadeInUp infinite mb-5 single-imgContainer"><img src={partShop.inventoryPictures[URLPartID]} className='single-picture' alt={items[URLPartID].name}/></div><div className="content_container">
                 <ul id="part_list">
                     <li>Item name: {items[URLPartID].name}</li>
                     <li>Item price: {items[URLPartID].price} €</li>

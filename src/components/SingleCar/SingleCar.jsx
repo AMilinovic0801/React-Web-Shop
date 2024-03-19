@@ -4,15 +4,20 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 import '../SingleCar/single_car.css'
 import { Link, useParams } from 'react-router-dom';
 import { CDBInput, CDBCard, CDBCardBody, CDBIcon, CDBBtn, CDBLink, CDBContainer, CDBSelect } from 'cdbreact';
-function SingleCar({cars}){
+import { AppContext } from '../../AppContext/AppContext';
+import { useContext } from 'react';
+function SingleCar(){
     const  urlParams =  useParams();
     const URLCarID = urlParams.id;
 
-    console.log(cars[0].images);
-    const img = cars[URLCarID].images;
-    const carDesc = cars[URLCarID].details;
+    const { singleCarData } = useContext(AppContext);
+    const carArray = singleCarData.cars;
+/*     console.log('context ====>', singleCarData);
+    console.log('singleCar ====>', carArray[URLCarID].title); */
 
-    console.log(carDesc);
+    const img = carArray[URLCarID].images;
+    const carDesc = carArray[URLCarID].details;
+
 
     let images = img.map((name, index) => ({
         original: name, 
@@ -22,9 +27,9 @@ function SingleCar({cars}){
         <div className='singleCar-body'>
             <section class="explaine">
                 <Link to='/cars'><div className='back-arrow'>🢀</div></Link>
-                <h2 id="h2-title">{cars[URLCarID].title}</h2>
+                <h2 id="h2-title">{carArray[URLCarID].title}</h2>
                 <h3>Key facts</h3>
-                <p id="text-car">{cars[URLCarID].key_facts}</p>
+                <p id="text-car">{carArray[URLCarID].key_facts}</p>
                 <ul>
                     <li className='lits-details'>Chassis Number: {carDesc.Chassis_number}</li>
                     <li className='lits-details'>Fuel type: {carDesc.Fuel}</li>
