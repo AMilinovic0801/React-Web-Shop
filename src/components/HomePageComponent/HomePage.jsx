@@ -29,7 +29,7 @@ function HomePage(){
                             <div className="important_text">
                                 <img src="https://res.cloudinary.com/dygasiqvo/image/upload/v1710268577/98915dc9-dbe2-43d4-b792-34f891a0af22-removebg-preview_qu1hkg.png" alt="logo" title="JDM cars" style={{width: 170}} className='logo-video'/>
                                 <h1>JDM Import</h1>
-                                <h2 style={{marginBottom: 0}}>Meant to Cause a Sceen.</h2>
+                                <h2 style={{marginBottom: 0}}>Meant to Cause a Scene.</h2>
                             </div>
                         </div>
                     </div>

@@ -74,6 +74,10 @@ h2{
 .bi{
     font-size: 2rem;
 }
+.item-desc{
+    font-size: 2rem;
+    margin: 0;
+}
 @media screen and (max-width: 1000px) {
     .content_container {
         flex-direction: column;

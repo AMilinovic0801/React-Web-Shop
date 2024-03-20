@@ -8,7 +8,9 @@ const AppContext = createContext({
     singlePartData: {},
     setSinglePartData: () => {},
     partShop: {},
-    setPartShop: () => {}
+    setPartShop: () => {},
+    userCountry: [],
+    setUserCountry: () => {}
 });
 
 export {AppContext};

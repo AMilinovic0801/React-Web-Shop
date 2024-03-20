@@ -58,7 +58,7 @@ function Header(){
                             <li>
                                 <a href="/web-shop/contact_us.html" title="Schedule a test drive" className="upper_color_change" target="_parent">
                                     <img className="key_jpn" src="https://res.cloudinary.com/dygasiqvo/image/upload/v1710268585/jpnautoimport-key-icon_dkp6qm.png" alt="Schedule a test drive"/>
-                                    <figcaption>Shedule a  <br/> test drive!</figcaption>
+                                    <figcaption>Schedule a  <br/> test drive!</figcaption>
                                 </a>
                             </li>
                             <li>

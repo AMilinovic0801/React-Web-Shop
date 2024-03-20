@@ -42,3 +42,11 @@ li.list-details{
     color: blue !important;
     box-shadow: 0 4px 8px rgba(41, 62, 248, 1) !important;
 }
+.car-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-country{
+    border: none;
+}

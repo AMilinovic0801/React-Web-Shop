@@ -11,6 +11,7 @@ import { SingleCar } from './components/SingleCar/SingleCar'
 import { carData } from './Database/cars'
 import { useState } from 'react'
 import { AppContext } from './AppContext/AppContext'
+import { countires } from './Database/countries'
 
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
   const [carShop, setCarShop] = useState(carList);
   const [singlePartData, setSinglePartData] = useState(partsData);
   const [partShop, setPartShop] = useState(partsList);
+  const [userCountry, setUserCountry] = useState(countires);
 
-  const dataStream = {singleCarData, setSingleCarData, carShop, setCarShop, singlePartData, setSinglePartData, partShop, setPartShop};
+  const dataStream = {singleCarData, setSingleCarData, carShop, setCarShop, singlePartData, setSinglePartData, partShop, setPartShop, userCountry, setUserCountry};
 
   return (
     <>

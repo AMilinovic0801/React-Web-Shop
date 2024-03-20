@@ -23,10 +23,10 @@ function SinglePart(){
         </div>
         <div className="col-lg-6 wow fadeInUp infinite mb-5 single-imgContainer"><img src={partShop.inventoryPictures[URLPartID]} className='single-picture' alt={items[URLPartID].name}/></div><div className="content_container">
                 <ul id="part_list">
-                    <li>Item name: {items[URLPartID].name}</li>
-                    <li>Item price: {items[URLPartID].price} €</li>
-                    <li>Item description: {items[URLPartID].description}</li>
-                    <li>Shipping time to Europe: {items[URLPartID].shipping_time}</li>
+                    <li><h3 className='item-desc'>Item name:</h3> {items[URLPartID].name} <hr /></li>
+                    <li><h3 className='item-desc'>Item price:</h3>  {items[URLPartID].price} € <hr /></li>
+                    <li><h3 className='item-desc'>Item description:</h3>  {items[URLPartID].description} <hr /></li>
+                    <li><h3 className='item-desc'>Shipping time to Europe:</h3>   {items[URLPartID].shipping_time} <hr /></li>
                 </ul>
             </div><div className="container d-flex justify-content-center mb-4">
                 <button type="button" className="single-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
