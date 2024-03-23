@@ -29,7 +29,7 @@ li.list-details{
     border-radius: 25px;
 }
 
-.cGZKtg{
+.button-form{
     background-color: black !important;
     transition-property: background-color !important;
     transition-duration: 0.4s !important;
@@ -37,7 +37,7 @@ li.list-details{
     margin-bottom: 2% !important;
 }
 
-.cGZKtg:hover{
+.button-form:hover{
     background-color: white !important;
     color: blue !important;
     box-shadow: 0 4px 8px rgba(41, 62, 248, 1) !important;
@@ -49,4 +49,13 @@ li.list-details{
 }
 .select-country{
     border: none;
+}
+.input-personal{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+.userInfo{
+    border: none;
+    margin: 1%;
 }
