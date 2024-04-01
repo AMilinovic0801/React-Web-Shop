@@ -21,14 +21,63 @@ function PageInventory() {
 
   const { carShop } = useContext(AppContext);
   const { partShop } = useContext(AppContext);
+  const { singleCarData } = useContext(AppContext);
   const [isParts, setIsParts] = useState(false);
   const [render, setRender] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterIndex, setFilterIndex] = useState([]);
   const location = useLocation();
+  const carData = singleCarData.cars;
   /* console.log(location.pathname); */
 
+  const carYears = carData.map((car) => car.details.Year);
+  const carMileages = carData.map((car) => car.details.Mileage);
+
+  const connectedCars = carData.map((car, index) => ({
+    title: carShop.inventoryName[index],
+    image: carShop.inventoryPictures[index],
+    year: carYears[index],
+    mileage: carMileages[index],
+  }));
+
+  console.log("title ===>", connectedCars);
+
+  function handleFilterChange(event) {
+    const selectedValue = event.target.value;
+    console.log(selectedValue); // This will log the selected option's value
+    switch (selectedValue) {
+      case "lower_mileage":
+        console.log("Mileage (Lower) clicked");
+        sortMileageLower();
+        break;
+      case "higher_mileage":
+        console.log("Mileage (Higher) clicked");
+        break;
+      case "higher_price":
+        console.log("Price (Higher) clicked");
+        break;
+      case "lower_price":
+        console.log("Price (Lower) clicked");
+        break;
+      case "highest_age":
+        console.log("Age (Newer) clicked");
+        break;
+      case "lowest_age":
+        console.log("Age (Older) clicked");
+        break;
+      default:
+        console.log("None selected");
+        break;
+    }
+  }
+
+  /* console.log("filter cars ====>", connectedCars); */
+
   console.log(render);
+  /* console.log(
+    "car mileage ====>",
+    carData.sort((a, b) => a.details.Mileage - b.details.Mileage)
+  ); */
 
   useEffect(() => {
     setIsParts(location.pathname === "/parts");
@@ -60,6 +109,33 @@ function PageInventory() {
     setSearchTerm(event.target.value);
   }
 
+  function sortMileageLower() {
+    // Filtriraj samo automobile koji odgovaraju pretraženom pojmu
+    const indexedCars = connectedCars
+      .filter((car, index) => filterIndex.includes(index)) // Filtriraj samo automobile koji odgovaraju indeksima iz filterIndex-a
+      .map((car, index) => ({
+        title: car.title,
+        originalIndex: filterIndex[index],
+      })); // Mapiraj filtrirane automobile s njihovim originalnim indeksima
+
+    // Sortiraj automobile prema kilometraži
+    indexedCars.sort(
+      (a, b) =>
+        connectedCars[a.originalIndex].mileage -
+        connectedCars[b.originalIndex].mileage
+    );
+
+    // Izdvoji naslove sortiranih automobila
+    const sortedTitles = indexedCars.map((car) => car.title);
+
+    // Postavi sortirane naslove u render state
+    setRender(sortedTitles);
+
+    // Postavi sortirane originalne indekse filterIndex state
+    const sortedIndices = indexedCars.map((car) => car.originalIndex);
+    setFilterIndex(sortedIndices);
+  }
+
   return (
     <div className="inventory-container">
       <header id="nav"></header>
@@ -77,12 +153,36 @@ function PageInventory() {
         </div>
         <div className="filter">
           <label htmlFor="filter_bar">Sort:</label>
-          <select id="filter" name="filter" className="filter">
-            <option value="">None</option>
+          <select
+            id="filter"
+            name="filter"
+            className="filter"
+            onChange={(event) => handleFilterChange(event)}
+          >
+            {searchTerm === "" ? (
+              <option value="" selected>
+                None
+              </option>
+            ) : null}
+            {searchTerm != "" ? (
+              <option value="" selected>
+                None
+              </option>
+            ) : null}
             <option value="highest_age">Age (Newer)</option>
             <option value="lowest_age">Age (Older)</option>
-            <option value="highest_mileage">Higher Mileage</option>
-            <option value="lowest_mileage">Lowest Milage</option>
+            {isParts ? null : (
+              <option value="lower_mileage">Mileage (Lower)</option>
+            )}
+            {isParts ? null : (
+              <option value="higher_mileage">Mileage (Higher)</option>
+            )}
+            {isParts ? (
+              <option value="higher_price">Price (Higher)</option>
+            ) : null}
+            {isParts ? (
+              <option value="lower_price">Price (Lower)</option>
+            ) : null}
           </select>
         </div>
       </section>

@@ -63,7 +63,8 @@ function SingleCar() {
               Fuel type: {carDesc.Fuel} <hr />
             </li>
             <li className="lits-details">
-              Mileage: {carDesc.Mileage} <hr />
+              Mileage: {carDesc.Mileage} km
+              <hr />
             </li>
             <li className="lits-details">
               Transmission: {carDesc.Transmission} <hr />
